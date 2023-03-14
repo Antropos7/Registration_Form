@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="GET" action="#">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label
+          >Salutation
+          <br />
+          <select name="Salutation" required>
+            <option>-- Choose Option --</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+          </select>
+        </label>
+
+        <p>
+          <label> First Name: <input type="text" name="firstName" required/> </label>
+        </p>
+
+        <p>
+          <label> Last Name: <input type="text" name="lastName" required/></label>
+        </p>
+        <p>
+          Select Gender:
+          <label> <input type="radio" name="gender" value="Male" required/> Male</label>
+          <label> <input type="radio" name="gender" value="Female" required/> Female</label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name = "email" required/></label>
+        </p>
+        <p>
+          <label>Date Of Birth: <input type="date" name = "birthDate" required/></label>
+        </p>
+        <p>
+          <label>Address:<br> <textarea name = "adress" cols="40" rows = "3" required></textarea>   </textarea></label>
+        </p>
+        <p>
+          <button type = "submit">Submit!</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
